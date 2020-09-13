@@ -1,0 +1,510 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./responsive";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+// HEADER
+header {
+  margin-top: 40px;
+  background-color: $primary-color;
+  padding-top: 15px;
+
+  .header-left {
+    color: white;
+    span {
+      a {
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s;
+        &:hover {
+          color: #6c757d;
+        }
+      }
+    }
+  }
+
+  .header-right {
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        background-color: black;
+        a {
+          i {
+            text-align: center;
+            text-decoration: none;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid black;
+            color: white;
+            transition: all 0.5s;
+            &:hover {
+              background-color: $primary-color;
+              border-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//NavBar
+.logo {
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    color: black;
+    span {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+  h6 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: $primary-color;
+  }
+}
+
+.nav-menu {
+  ul {
+    font-size: 15px;
+    li {
+      a {
+        text-transform: uppercase;
+      }
+      padding: 0 15px;
+      &:first-child {
+        a {
+          color: $primary-color !important;
+        }
+        &::after {
+          @include after-hover(1);
+        }
+      }
+    }
+    .hover-wait {
+      a {
+        color: $dark-font-color !important;
+      }
+      &::after {
+        @include after-hover(0);
+        width: 0;
+        transition: width 0.5s;
+      }
+      &:hover {
+        &::after {
+          opacity: 1;
+          width: 100%;
+        }
+      }
+    }
+    .hover-wait {
+      &:nth-child(5) {
+        .dropdown-menu {
+          background-color: #00000087 !important;
+          a {
+            font-size: 15px;
+            text-align: center;
+            text-transform: capitalize;
+            color: white;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              background-color: #00000000 !important;
+              color: $primary-color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Carousel
+#carousel-ID {
+  .carousel-indicators {
+    bottom: 30%;
+    li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid white;
+    }
+    .active {
+      background-color: white;
+    }
+  }
+  .carousel-inner {
+    .carousel-item {
+      img {
+        position: relative;
+      }
+      .carousel__content {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+        color: white;
+        text-align: center;
+        h1 {
+          font-weight: 100;
+          letter-spacing: 3px;
+          span {
+            font-weight: 600;
+            font-size: larger;
+          }
+        }
+        p {
+          font-size: 17px;
+          letter-spacing: 3px;
+          font-weight: 100;
+        }
+        button {
+          padding: 8px 16px;
+          border: 1px solid white;
+          background: transparent;
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Intro
+#intro {
+  margin-top: 80px;
+  .intro__text {
+    text-align: center;
+    @include header-content;
+    p {
+      &:last-of-type {
+        color: #999;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        margin-top: 50px;
+      }
+    }
+  }
+  .intro__courses {
+    margin-top: 70px;
+    .row {
+      .col-sm-4 {
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        &:last-of-type {
+          border-right: 1px solid black;
+        }
+        .course__content {
+          margin: 30px 0;
+          i {
+            font-size: 30px;
+            margin-bottom: 30px;
+          }
+          h1 {
+            font-size: 30px;
+            font-weight: bolder;
+            color: $primary-color;
+          }
+          h2 {
+            font-size: 17px;
+            font-weight: bolder;
+            margin-top: 25px;
+          }
+          p {
+            font-size: 15px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Counting
+#counting {
+  margin-top: 70px;
+  background: url(../images/banner2.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .counting__content {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    .counting__header {
+      text-align: center;
+      @include header-content;
+      p {
+        color: white;
+      }
+    }
+    .count__items {
+      margin-top: 50px;
+      .count__item {
+        text-align: center;
+        h3 {
+          font-size: 40px;
+          color: white;
+        }
+        p {
+          font-size: 25px;
+          color: $primary-color;
+          span {
+            font-size: 40px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Offer
+#offer {
+  margin-top: 70px;
+  .offer__header {
+    @include header-content;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .offer__items {
+    .offer__item {
+      text-align: center;
+
+      .item__content {
+        margin: 10px 0;
+        padding: 20px 15px;
+        border: 1px solid #9999998c;
+        box-shadow: 0 0 8px 4px #ccc;
+        transition: all 0.7s;
+        &:hover {
+          background-color: #12ccc3;
+        }
+        h3 {
+          font-size: 35px;
+          color: $primary-color;
+        }
+        h4 {
+          padding: 15px 0;
+        }
+
+        p {
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+//TESTIMONIALS
+#testimonials {
+  margin-top: 60px;
+  background: url(../images/banner3.jpg) no-repeat;
+  background-attachment: fixed;
+  .testimonials__frame {
+    padding: 100px 0;
+
+    .testimonials__header {
+      @include header-content;
+      p {
+        color: white;
+      }
+    }
+
+    .testimonials__content {
+      background-color: rgba(0, 0, 0, 0.47);
+      margin-top: 30px;
+      box-shadow: 0 0 8px 4px #ccc;
+      padding: 39px 15px;
+      .content__item {
+        .item__top {
+          color: white;
+          background-color: rgba(0, 0, 0, 0.47);
+          padding: 13px 20px;
+          font-size: 12px;
+          letter-spacing: 1px;
+          border-radius: 15px;
+          position: relative;
+          &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid rgba(0, 0, 0, 0.47);
+            position: absolute;
+            left: 33%;
+            top: 100%;
+          }
+        }
+        .item__bottom {
+          margin-top: 27px;
+          justify-content: center;
+          img {
+            width: 65px;
+          }
+          .bottom__name {
+            padding-left: 10px;
+            font-size: 13px;
+            h5 {
+              color: white;
+            }
+            p {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//NEWS AND EVENT
+#news {
+  margin-top: 50px;
+  .news__header {
+    text-align: center;
+    @include header-content;
+  }
+  .news__content {
+    margin-top: 50px;
+    .content__top {
+      @include news-content-deco;
+    }
+    .content__bottom {
+      margin-top: 40px;
+      @include news-content-deco;
+    }
+  }
+}
+
+//footer
+#footer {
+  margin-top: 60px;
+  background-color: #141415;
+  .footer__content {
+    .content__top {
+      padding-top: 50px;
+      .top__item {
+        h2 {
+          color: $primary-color;
+          padding-bottom: 30px;
+        }
+        p {
+          color: #999;
+        }
+      }
+      .top__item2 {
+        i {
+          color: $primary-color;
+          margin-right: 12px;
+        }
+        a {
+          text-decoration: none;
+          color: #999;
+          span {
+            transition: all 0.5s;
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+      .top__item3 {
+        p {
+          i {
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            border: 1px solid #999;
+            color: white;
+            margin-right: 27px;
+          }
+          a {
+            color: #999;
+          }
+        }
+      }
+    }
+    .content__bottom {
+      margin-top: 30px;
+      align-items: center;
+      .newsletter {
+        color: $primary-color;
+        letter-spacing: 1px;
+      }
+      .form {
+        form {
+          input {
+            width: 100%;
+            padding: 10px 16px;
+            border: none;
+            &:focus {
+              box-shadow: none !important;
+              outline: none;
+            }
+            &::placeholder {
+              font-size: small;
+            }
+          }
+        }
+      }
+      .button {
+        button {
+          padding: 10px 30px;
+          color: white;
+          background-color: $primary-color;
+          transition: all 0.5s;
+          border: none;
+          &:hover {
+            background-color: #ec1955;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    background-color: #0f0f10;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 100;
+
+    p {
+      padding: 25px 0;
+      a {
+        text-decoration: none;
+        span {
+          color: $primary-color;
+          transition: all 0.5s;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

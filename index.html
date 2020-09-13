@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai Tap Buoi 7-8</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="container-fluid d-flex justify-content-between">
+      <div class="header-left">
+        <span><i class="fas fa-phone-alt mr-2"></i></span>
+        <span class="mr-4">+456 123 7890</span>
+        <span><i class="far fa-envelope mr-2"></i></span>
+        <span><a href="#">info@example.com</a></span>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-pinterest-p"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-md navbar-dark container">
+      <!-- Brand -->
+      <a class="navbar-brand logo" href="#"
+        ><h1><i class="fas fa-quran mr-2"></i><span>instruction</span></h1>
+        <h6>education</h6>
+      </a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse nav-menu" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item hover-wait">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item hover-wait">
+            <a class="nav-link" href="#">services</a>
+          </li>
+          <li class="nav-item hover-wait">
+            <a class="nav-link" href="#">gallery</a>
+          </li>
+          <li class="nav-item dropdown hover-wait">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              pages
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">code</a>
+              <a class="dropdown-item" href="#">icon</a>
+            </div>
+          </li>
+          <li class="nav-item hover-wait">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- END NAV BAR -->
+
+    <!-- CAROUSEL -->
+    <section>
+      <div id="carousel-ID" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#carousel-ID" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-ID" data-slide-to="1"></li>
+          <li data-target="#carousel-ID" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/banner1.jpg" alt="" width="100%" />
+            <div class="carousel__content">
+              <h1>Digital Marketing <span>Designing.</span></h1>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button>
+                <a href="#"
+                  >Read more <i class="fas fa-angle-double-right"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner2.jpg" alt="" width="100%" />
+            <div class="carousel__content">
+              <h1>Digital Marketing <span>Course.</span></h1>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button>
+                <a href="#"
+                  >Read more <i class="fas fa-angle-double-right"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner3.jpg" alt="" width="100%" />
+            <div class="carousel__content">
+              <h1>Digital Marketing <span>Marketing.</span></h1>
+              <p>
+                Any successful career starts with good education. Together with
+                us you will have deeper knowledge of the subjects
+              </p>
+              <button>
+                <a href="#"
+                  >Read more <i class="fas fa-angle-double-right"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carousel-ID" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-ID" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- END CAROUSEL -->
+
+    <!-- INTRO -->
+    <section id="intro">
+      <div class="intro__text container">
+        <h1>welcome to education</h1>
+        <p>when climbing the career ladder</p>
+        <p>
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, sunt in culpa qui officia deserunt mollit anim
+          id est laboth. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur sunt in culpa qui .
+        </p>
+      </div>
+      <div class="intro__courses container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="course__content">
+              <i class="fas fa-laptop-code"></i>
+              <h1>Design Course</h1>
+              <h2>FASHION DESIGN</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+              <h2>INTERIOR DESIGN</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+              <h2>GRAPHIC DESIGN</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="course__content">
+              <i class="fas fa-arrows-alt"></i>
+              <h1>Marketing Course</h1>
+              <h2>FACEBOOK MARKETING</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+              <h2>YOUTUBE MARKETING</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+              <h2>TWITTER MARKETING</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="course__content">
+              <i class="fas fa-chart-bar"></i>
+              <h1>Financial Course</h1>
+              <h2>COMPLEXITIES OF BANKING</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+              <h2>COMPLIANCE REGULATIONS</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+              <h2>FINANCE PRODUCTS</h2>
+              <p>Ncididunt ut labore et t enim ad minim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END INTRO -->
+
+    <!-- COUNTING -->
+    <section id="counting">
+      <div class="container counting__content">
+        <div class="counting__header">
+          <h1>OUR STATS</h1>
+          <p>When Climbing The Career Ladder</p>
+        </div>
+
+        <div class="count__items row">
+          <div class="col-sm-3 count__item">
+            <h3><i class="fas fa-graduation-cap"></i></h3>
+            <p>Graduates</p>
+            <p><span class="counter">45</span></p>
+          </div>
+          <div class="col-sm-3 count__item">
+            <h3><i class="fas fa-user"></i></h3>
+            <p>Certified Staff</p>
+            <p><span class="counter">165</span></p>
+          </div>
+          <div class="col-sm-3 count__item">
+            <h3><i class="fas fa-users"></i></h3>
+            <p>Student</p>
+            <p><span class="counter">563</span></p>
+          </div>
+          <div class="col-sm-3 count__item">
+            <h3><i class="fas fa-trophy"></i></h3>
+            <p>Awards</p>
+            <p><span class="counter">245</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER -->
+    <section>
+      <div id="offer" class="container">
+        <div class="offer__header">
+          <h1>WHAT WE OFFER</h1>
+          <p>When Climbing The Carrer Ladder</p>
+        </div>
+
+        <div class="offer__items">
+          <div class="row">
+            <div class="col-sm-4 offer__item">
+              <div class="item__content">
+                <h3><i class="fas fa-graduation-cap"></i></h3>
+                <h4>UNDERGRADUATE STUDY</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis
+                  iste natus error sit voluptatem
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 offer__item">
+              <div class="item__content">
+                <h3><i class="fas fa-bible"></i></h3>
+                <h4>PROFESSIONAL STUDY</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis
+                  iste natus error sit voluptatem
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 offer__item">
+              <div class="item__content">
+                <h3><i class="fas fa-tasks"></i></h3>
+                <h4>PROGRAMS</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis
+                  iste natus error sit voluptatem
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-sm-4 offer__item">
+              <div class="item__content">
+                <h3><i class="far fa-comment"></i></h3>
+                <h4>ONLINE LEARNING</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis
+                  iste natus error sit voluptatem
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 offer__item">
+              <div class="item__content">
+                <h3><i class="fas fa-bookmark"></i></h3>
+                <h4>SUMMER SESSION</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis
+                  iste natus error sit voluptatem
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 offer__item">
+              <div class="item__content">
+                <h3><i class="fas fa-globe-asia"></i></h3>
+                <h4>GLOBAL EDUCATION</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis
+                  iste natus error sit voluptatem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="container text-center testimonials__frame">
+        <div class="testimonials__header">
+          <h1>TESTIMONIALS</h1>
+          <p>When Climbing The Carrer Ladder</p>
+        </div>
+
+        <div class="testimonials__content">
+          <div class="owl-carousel owl-theme">
+            <div class="content__item item">
+              <div class="item__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__bottom d-flex align-items-center">
+                <img src="./images/test1.jpg" alt="" />
+                <div class="bottom__name">
+                  <h5>Marry Jane</h5>
+                  <p>Vestibulum</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__item item">
+              <div class="item__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__bottom d-flex align-items-center">
+                <img src="./images/test2.jpg" alt="" />
+                <div class="bottom__name">
+                  <h5>Maria Bellie</h5>
+                  <p>Vestibulum</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__item item">
+              <div class="item__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__bottom d-flex align-items-center">
+                <img src="./images/test3.jpg" alt="" />
+                <div class="bottom__name">
+                  <h5>Eimi Fukada</h5>
+                  <p>Vestibulum</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__item item">
+              <div class="item__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__bottom d-flex align-items-center">
+                <img src="./images/test1.jpg" alt="" />
+                <div class="bottom__name">
+                  <h5>Yui Hanata</h5>
+                  <p>Vestibulum</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__item item">
+              <div class="item__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__bottom d-flex align-items-center">
+                <img src="./images/test2.jpg" alt="" />
+                <div class="bottom__name">
+                  <h5>Trump Nguyen</h5>
+                  <p>Vestibulum</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__item item">
+              <div class="item__top">
+                <p>
+                  Sed semper leo metus, a lacinia eros semper at. Etiam sodales
+                  orci sit amet vehicula pellentesque.
+                </p>
+              </div>
+              <div class="item__bottom d-flex align-items-center">
+                <img src="./images/test3.jpg" alt="" />
+                <div class="bottom__name">
+                  <h5>Obama Tran</h5>
+                  <p>Vestibulum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW + EVENTs -->
+    <section id="news" class="container">
+      <div class="news__header">
+        <h1>NEWS & EVENTS</h1>
+        <p>Exclusive Holidays For Any Travelers</p>
+      </div>
+      <div class="news__content">
+        <div class="row content__top">
+          <div class="col-sm-5">
+            <div class="content__img">
+              <img class="img-fluid" src="./images/g7.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-7 content__text">
+            <h2><a href="">SIT AMET JUSTO VITAE</a></h2>
+            <p>3/01/2018</p>
+            <p>
+              Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor
+              id egestas. Nulla leo purus, facilisis non cursus ut, egestas sed
+              ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus,
+              facilisis non cursus ut, egestas sed ipsum.Fusce ullamcorper
+              aliquet dolor id egestas. Nulla leo purus, facilisis non cursus
+              ut, egestas sed ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="row content__bottom">
+          <div class="col-sm-7 content__text">
+            <h2><a href="">FUSCE SCELERISQUE</a></h2>
+            <p>5/01/2018</p>
+            <p>
+              Proin euismod vehicula vestibulum. Fusce ullamcorper aliquet dolor
+              id egestas. Nulla leo purus, facilisis non cursus ut, egestas sed
+              ipsum.Fusce ullamcorper aliquet dolor id egestas. Nulla leo purus,
+              facilisis non cursus ut, egestas sed ipsum.Fusce ullamcorper
+              aliquet dolor id egestas. Nulla leo purus, facilisis non cursus
+              ut, egestas sed ipsum.
+            </p>
+          </div>
+          <div class="col-sm-5">
+            <div class="content__img">
+              <img class="img-fluid" src="./images/g10.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer__content container">
+        <div class="content__top row">
+          <div class="col-sm-4 top__item">
+            <h2>About Us</h2>
+            <p>
+              Nam libero tempore cum vulputate id est id, pretium semper enim.
+              Morbi viverra congue nisi vel pulvinar posuere sapien eros.
+            </p>
+          </div>
+          <div class="col-sm-4 top__item top__item2">
+            <h2>Latest News</h2>
+            <p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href=""><span>Lorem ipsum neque vulputate</span></a>
+            </p>
+            <p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href=""><span>Dolor amet sed quam vitae</span></a>
+            </p>
+            <p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href=""><span>Lorem ipsum neque vulputate</span></a>
+            </p>
+            <p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href=""><span>Dolor amet sed quam vitae</span></a>
+            </p>
+            <p>
+              <i class="fas fa-long-arrow-alt-right"></i>
+              <a href=""><span>Lorem ipsum neque vulputate</span></a>
+            </p>
+          </div>
+          <div class="col-sm-4 top__item top__item3">
+            <h2>Contact Info</h2>
+            <p>
+              <i class="fas fa-map-pin"></i>8088 USA, Honey block, New York
+              City.
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i><a href="">info@example.com</a>
+            </p>
+            <p><i class="fas fa-phone-alt"></i>+09187 8088 9436</p>
+          </div>
+        </div>
+        <div class="content__bottom row">
+          <div class="col-sm-4 newsletter">
+            <h3>Sign up for our Newsletter</h3>
+          </div>
+          <div class="col-sm-6 form">
+            <form>
+              <input type="text" placeholder="Enter Email Address....." />
+            </form>
+          </div>
+          <div class="col-sm-2 button">
+            <button>SUBMIT</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2018 Instruction. All rights reserved | Design by
+          <a href="#"><span> W3layouts</span></a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- COUNTING UP TO NUMBER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="./js/jquery.countup.js"></script>
+
+    <script>
+      $(".counter").countUp();
+    </script>
+    <!-- COUNTING UP TO NUMBER -->
+    <!-- OWL CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
